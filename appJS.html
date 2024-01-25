@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultar Universidades</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+<!--dropdown paises -->
+<section>
+  <label for="selectorPais">Selecciona un país:</label>
+  <select id="selectorPais">
+    <option value="EstadosUnidos">Estados Unidos</option>
+    <option value="Mexico">Mexico</option>
+  </select>
+</section>
+
+<!-- Seccion de la tabla -->
+<section>
+  <table id="tablaUniversidades" class="display">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>alpha_two_code</th>
+        <th>Country</th>
+        <th>state-province</th>
+        <th>domains</th>
+        <th>Web Page</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Los datos se insertarán aquí por medio de una consulta FETCH del js -->
+    </tbody>
+  </table>
+</section>
+
+
+
+</body>
+</html>
